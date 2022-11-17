@@ -1,0 +1,175 @@
+
+
+.lol{
+    background: #fff !important;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+}
+.dashboardmenu{
+width: 73px;
+height: 17px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+background-color: #fff;
+color: #00487F;
+
+}
+
+.rightnavbar{
+    display: flex;
+    justify-content: center;
+
+}
+
+.rightnavbar input{
+    width: 283px;
+    height: 32px;
+    border: none ;
+    border-radius: 100px;
+    justify-content: center;
+    background: #F5F6F8;
+
+    
+}
+
+.rightnavbar .search{
+    position: relative;
+    left: -27px;
+    right: 9.38%;
+    top: 7px;
+    bottom: 9.38%;
+    color: rgba(0, 72, 127, 0.42);
+    justify-content: center;
+    /* background: rgba(0, 72, 127, 0.42); */
+    font-size: 16px;
+    background: transparent;
+}
+
+.rightnavbar .notification{
+left: 6.14%;
+right: 9.38%;
+top: 6.14%;
+bottom: 9.38%;
+color:  rgba(0, 72, 127, 0.42);
+margin-right: 20px;
+justify-content: center;
+color: #00487F;
+height: 16px;
+width: 16px;
+margin-left: 33px;
+margin-top: 5px;
+/* background: rgba(0, 72, 127, 0.42); */
+}
+
+.rightnavbar img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+   top: -5px;
+    position: relative;
+}
+.rightnavbar h6{
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 185, 185);
+    justify-content: center;
+    margin-top: 5px;
+    margin-right: 20px;
+    color: #00487F;
+}
+
+.card{
+    width: 310px;
+    height: 120px;
+    border-radius: 12px;
+    border: 1px transparent;
+    box-sizing: border-box;
+    background-color: #fff !important;
+}
+
+.card:hover{
+    
+    transition: all 0.5s;
+    transform: perspective(500px) translateZ(20px);
+    box-shadow: 0px 5px 5px 0px #888888;  
+    
+}
+
+.cardtitle{
+    text-align: center;
+    /* Inter---Regular 14 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+margin: 0;
+padding: 0;
+/* identical to box height */
+
+
+align-items: center;
+
+
+/* Disabled color */
+
+color: #999999;
+}
+
+.cardmessage{
+text-align: center;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 28px;
+line-height: 34px;
+margin: 0;
+padding: 0;
+
+}
+
+.edit{
+    margin: 10px 0px;
+}
+
+.edit h4{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    align-items: center;
+    
+    color: #58595B;
+}
+
+.edit .button{
+    width: 121px;
+    height: 28px;
+    background: #174778;;
+    align-items: right;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+    margin-left: 506px;
+    margin-top: 4px;
+
+    
+    color: #FFFFFF;
+}
+
+
+.chartsystem{
+   margin-top: 24px;
+}

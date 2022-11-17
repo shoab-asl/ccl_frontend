@@ -1,0 +1,56 @@
+.chart{
+    background: #fff;
+    border-radius: 10px;
+}
+
+.charttop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.charttop  h4{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+
+display: flex;
+align-items: center;
+margin-left: 23px;
+margin-top: 26px;
+
+color: #58595B;
+}
+
+.charttopright{
+    display: flex;
+    margin-right: 23px;
+    margin-top: 26px;
+}
+
+.charttopright h5{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+
+/* Gray */
+
+color: #58595B;
+justify-content: center;
+}
+
+.charttopright svg{
+    width: 14px;
+    height: 14px;
+    color: #58595B;
+    justify-content: center;
+
+}
