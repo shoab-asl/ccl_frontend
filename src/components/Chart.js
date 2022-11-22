@@ -14,6 +14,9 @@
        ],
           options: {
             chart: {
+              toolbar : {
+              show:false
+              },
               height: 350,
               type: 'area'
             },

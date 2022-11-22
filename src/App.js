@@ -1,5 +1,7 @@
-import { Container } from "react-bootstrap";
+
 import LoginPage from './components/login';
+
+
 
 
 import AutoLayoutSizingExample from "./components/Dashboard";
@@ -9,8 +11,9 @@ function App() {
     <div className="App">
      
       <AutoLayoutSizingExample/>
+ 
    
-     <LoginPage/>
+     {/* <LoginPage/> */}
    
 
     </div>

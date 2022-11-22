@@ -1,0 +1,99 @@
+.invoice{
+    width: 400px;
+    min-height: 480px;
+    background: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.invoice .row{
+    width: 350px;
+    border-bottom: 1px solid #ECECEC;
+    padding: 16px  0px 20px;
+    margin-left: 20px;
+
+}
+
+.row img{
+width: 40px;
+min-height: 40px;
+/* display: flex; */
+padding: 0;
+margin: 0;
+justify-content: center;
+
+}
+.row h6{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;;
+  /* Inter---Semi-Bold 12 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Neutral / 1 */
+
+color: #343434;
+    }
+    
+ .row p{
+    margin: 0;
+    padding: 0;
+    /* Inter---Regular 12 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Neutral / 3 */
+
+color: #989898;
+  }
+
+  .invoice .message{
+    margin-bottom: 10px;
+  }
+
+  .invoice h1{
+    /* Inter---Semi-Bold 16 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+
+
+/* heading color */
+
+color: #3B3B3B;
+margin: 0;
+padding: 22px 22px;
+  }
+
+ .amount{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+text-align: right;
+
+/* Primary / 1 */
+
+
+
+  }
