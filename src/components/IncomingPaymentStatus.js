@@ -4,8 +4,9 @@ import "../components/incomingpaymentstatus.css";
 const IncomingPaymentStatus =()=>{
  
 
-    const DUMMY_DATA =[
+    const DUMMY_DATA=[
         {
+          
          companyname: "Intertico " , 
          type: "Web, UI/UX Design", 
         },
@@ -64,6 +65,7 @@ const IncomingPaymentStatus =()=>{
         <div className="paymentstatus">
             <h1>Incoming Payment Status</h1>
             <p>We are showing here top 4 companies payment status</p>
+            
             <div className="row ">
          
                 <div className="col-3">
@@ -72,8 +74,8 @@ const IncomingPaymentStatus =()=>{
                     <h2>Company</h2>
                     {DUMMY_DATA.filter(companyname => companyname.companyname).map(filteredName => (
                    <ul> 
-                    <li>{filteredName.companyname}</li>
-                   <li>{filteredName.type}</li>
+                    <li className="company">{filteredName.companyname}</li>
+                   <li className="status">{filteredName.type}</li>
                    </ul>
 
   ))}
@@ -85,8 +87,8 @@ const IncomingPaymentStatus =()=>{
                     <h2>Due Date</h2>
                     {DUMMY_DATA2.filter(date => date.date).map(filteredDate => (
                    <ul> 
-                    <li>{filteredDate.date}</li>
-                   <li>{filteredDate.lastpayment}</li>
+                    <li className="date">{filteredDate.date}</li>
+                   <li className="status">{filteredDate.lastpayment}</li>
                    </ul>
 
   ))}
@@ -98,8 +100,8 @@ const IncomingPaymentStatus =()=>{
                     <h2>Due Date</h2>
                     {DUMMY_DATA3.filter(amount => amount.amount).map(filteredAmount => (
                    <ul> 
-                    <li>{filteredAmount.amount}</li>
-                   <li>{filteredAmount.status}</li>
+                    <li className="amount">{filteredAmount.amount}</li>
+                   <li className="status">{filteredAmount.status}</li>
                    </ul>
 
   ))}

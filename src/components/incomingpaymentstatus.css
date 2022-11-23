@@ -1,5 +1,5 @@
 .paymentstatus{
-    width: 850px !important;
+    width: 100% !important;
     height: 480px !important;
     background: #fff !important;
     padding: 20px 20px!important;
@@ -32,6 +32,7 @@ line-height: 16px;
 /* or 100% */
 margin: 0; 
 padding: 0;
+padding-top: 10px;
 
 color: #212121;
 }
@@ -60,3 +61,218 @@ color: #B5B5C3;
     margin: 0;
     padding: 0;
 }
+
+.company{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+
+color: #464E5F;
+padding-top: 38px;
+padding-bottom: 8px;
+  }
+
+  .date{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+
+/* Red */
+
+color: #EB5757;
+padding-top: 38px;
+padding-bottom: 8px;
+  }
+
+
+
+ .message .amount{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+text-align: left;
+color: #464E5F;
+padding-top: 38px;
+padding-bottom: 8px;
+  }
+
+  .status{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+     
+    color: #B5B5C3;
+  }
+
+  @media only screen and (max-width: 992px){
+    .paymentstatus{
+        width: 100% !important;
+        height: 480px !important;
+        background: #fff !important;
+        padding: 10px 10px!important;
+        border-radius: 20px;
+        margin-top: 20px;
+    } 
+    
+    .paymentstatus .message h2{
+        /* Inter---Semi-Bold 14 */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #464E5F;
+    }
+    
+    .paymentstatus h1{
+        /* Inter---Semi-Bold 16 */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 10px;
+    /* or 100% */
+    margin: 0; 
+    padding: 0;
+    padding-top: 5px;
+    
+    color: #212121;
+    }
+    
+    .paymentstatus p{
+        /* Inter---Regular 12 */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    /* identical to box height */
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 38px;
+    
+    color: #B5B5C3;
+    }
+    
+    .paymentstatus .message ul{
+    
+        font-size: 12px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .company{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+    
+    color: #464E5F;
+    padding-top: 30px;
+    padding-bottom: 5px;
+      }
+    
+      .date{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    
+    /* Red */
+    
+    color: #EB5757;
+    padding-top: 30px;
+    padding-bottom: 5px;
+      }
+    
+    
+    
+     .message .amount{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+    color: #464E5F;
+    padding-top: 30px;
+    padding-bottom: 5px;
+      }
+    
+      .status{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        /* identical to box height */
+         
+        color: #B5B5C3;
+      }
+  }
+
+  @media only screen and (max-width: 768px){
+    .paymentstatus{
+        width: 100% !important;
+        height: 450px !important;
+        background: #fff !important;
+        padding: 10px 10px!important;
+        border-radius: 20px;
+   
+    } 
+  }
+  @media (max-width: 1200px) { 
+
+    .paymentstatus{
+        width: 100% !important;
+        min-height: 100% !important;
+        background: #fff !important;
+        padding: 10px 10px!important;
+        border-radius: 20px;
+   
+    } 
+    .date{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    
+    /* Red */
+    
+    color: #EB5757;
+    padding-top: 30px;
+    padding-bottom: 5px;
+      }
+      .message .amount{
+        font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: left;
+    color: #464E5F;
+    padding-top: 30px;
+    padding-bottom: 5px;
+      }
+  }
+  

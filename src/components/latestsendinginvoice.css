@@ -1,5 +1,5 @@
 .invoice{
-    width: 400px;
+    width: 100%;
     min-height: 480px;
     background: #fff;
     border-radius: 20px;
@@ -90,10 +90,86 @@ font-size: 14px;
 line-height: 17px;
 /* identical to box height */
 
-text-align: right;
+text-align: left;
 
 /* Primary / 1 */
 
 
 
+  }
+
+  @media only screen and (max-width: 992px){
+    .invoice{
+      width: 100%;
+      min-height: 480px;
+      background: #fff;
+      border-radius: 20px;
+      margin-top: 20px;
+  }
+  .invoice .row{
+    width: 200px;
+    border-bottom: 1px solid #ECECEC;
+    padding: 16px  0px 20px;
+    margin-left: 20px;
+
+}
+.row h6{
+  margin: 0;
+  padding: 0;
+
+  /* Inter---Semi-Bold 12 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+
+/* Neutral / 1 */
+
+color: #343434;
+    }
+    .amount{
+      font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 17px;
+  /* identical to box height */
+  
+  text-align: left;
+  /* Primary / 1 */
+  
+    }
+        
+     .row p{
+        margin: 0;
+        padding: 0;
+        /* Inter---Regular 12 */
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    
+    /* Neutral / 3 */
+    
+    color: #989898;
+      }
+
+      .row img{
+        width: 30px;
+        min-height: 30px;
+        /* display: flex; */
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        
+        }
+    
   }

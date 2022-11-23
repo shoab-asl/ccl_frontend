@@ -10,13 +10,16 @@ import NotificationAddOutlinedIcon from '@mui/icons-material/NotificationAddOutl
 import ApexChart from './Chart';
 import LatestSendingInvoice from './LatestSendingInvoice';
 import IncomingPaymentStatus from './IncomingPaymentStatus';
+import Footer from './Footer';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 
 function AutoLayoutSizingExample() {
   return (
-    <div >   <Navbar  className="lol">
-    <Container style={{background: "#fff !important"}}>
+    <div >  
+      <Navbar  className="lol" >
+    <Container  style={{background: "#fff !important"}}>
     
       <Navbar.Brand href="#home"><img src={Logo} alt=""/></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,8 +28,8 @@ function AutoLayoutSizingExample() {
           <Nav.Link href="#dashboard" active><span></span>Dashboard</Nav.Link>
           <Nav.Link href="#contacts">Contacts</Nav.Link>
           <Nav.Link href="services">Services</Nav.Link>
-          <Nav.Link href="invoice">Invoice</Nav.Link>
-          <Nav.Link href="settings">Settings</Nav.Link>
+          <Nav.Link href="invoice" style={{display:"flex"}}>Invoice <KeyboardArrowDownIcon/></Nav.Link>
+          <Nav.Link href="settings"style={{display:"flex"}}>Settings<KeyboardArrowDownIcon/></Nav.Link>
         </Nav>
       </Navbar.Collapse>
             <div className='rightnavbar'>
@@ -41,17 +44,17 @@ function AutoLayoutSizingExample() {
   </Navbar>
     
       <Container>
-        <Row className='edit'>
-         <Col>
+        <Row className='edit' md={12} >
+         <Col className='mt-3 mb-3' md={9} sm={8} xs={6}>
          <h4>Dashboard</h4>
          </Col>
-         <Col>
+         <Col  className='mt-3 mb-3' md={3} xs={6} sm={4} >
          <Button className='button' >Edit dashboard</Button>
          </Col>
         </Row>
-<Row>
-  <Col>  
-  <Card className='card' style={{ width: '18rem' }}>
+<Row md={12}>
+  <Col md={3} sm={6} xs={6}>  
+  <Card className='card' style={{ width: "100%" }}>
      
      <Card.Body>
        <Card.Title className='cardtitle'>Draft(3)</Card.Title>
@@ -62,8 +65,8 @@ function AutoLayoutSizingExample() {
      </Card.Body>
    </Card>
    </Col>
-   <Col>  
-  <Card className='card' style={{ width: '18rem' }}>
+   <Col md={3} sm={6} xs={6}>  
+  <Card className='card' style={{ width: "100%" }}>
      
      <Card.Body>
        <Card.Title className='cardtitle'>Awaiting Approval</Card.Title>
@@ -74,8 +77,8 @@ function AutoLayoutSizingExample() {
      </Card.Body>
    </Card>
    </Col>
-   <Col>  
-  <Card className='card' style={{ width: '18rem' }}>
+   <Col md={3} sm={6} xs={6}>  
+  <Card className='card' style={{ width: "100%" }}>
      
      <Card.Body>
        <Card.Title className='cardtitle'>Awaiting Payment(1)</Card.Title>
@@ -86,8 +89,8 @@ function AutoLayoutSizingExample() {
      </Card.Body>
    </Card>
    </Col>
-   <Col>  
-  <Card className='card' style={{ width: '18rem' }}>
+   <Col md={3} sm={6} xs={6}>  
+  <Card className='card' style={{ width: "100%" }}>
      
      <Card.Body>
        <Card.Title className='cardtitle'>Paid</Card.Title>
@@ -100,21 +103,22 @@ function AutoLayoutSizingExample() {
    </Col>
 </Row>
 <Row className='chartsystem' >
-<Col md={7}>
+<Col md={12} lg={7}>
   <div  ><ApexChart /></div>
     </Col>
-    <Col md={5}><ApexChart /></Col>
+    <Col md={12} lg={5}><ApexChart /></Col>
    </Row>
   </Container>
-    <Container>
+    <Container style={{height:"1000px"}}>
       <Row >
-     <Col md={4} >
+     <Col md={5} lg={5} sm={12}  >
      <LatestSendingInvoice/></Col>
-     <Col md={8}>
+     <Col md={7} lg={7} sm={12}>
      <IncomingPaymentStatus/>
      </Col>
       </Row>
     </Container>
+    <Footer/>
   </div>
   );
 }
