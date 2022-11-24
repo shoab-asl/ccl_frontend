@@ -1,52 +1,59 @@
 import React from "react";
-import classes from './login.module.css'
+import '../components/login.css';
 import Image  from "../assets/image.jpeg";
 import LockIcon from '@mui/icons-material/Lock';
 import EmailIcon from '@mui/icons-material/Email';
-import Logo from '../assets/logo_googleg_48dp.png';
+
 import Avat from '../assets/download.jpeg';
 import FacebookIcon from '@mui/icons-material/Facebook';
-
+import { Container,Row, Col } from "react-bootstrap";
+import googleIcon from "../assets/google.png";
 
 
 
 
 const LoginPage = () =>{
     return(
-        <div className={classes.container}>
-          <div className={classes.leftsidebar}>
-            <div className={classes.register}>
+  
+        <Container>
+          <Row className="login">
+            <Col xl={1} lg={1} md={1} ></Col>
+            <Col xl={5} lg={5} md={5} >
+            <div className="leftsidebar">
+            <div className="register">
                 <h5>Have an account?</h5>
                 <button>Sign Up</button>
             </div>
            
            <h1>Welcome to CCL</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id at <br/> penatibus at sagittis. Elit fermentum, sit odio ullamcorper <br/> lectus facilisis cras vitae. </p>
-            <img src={Image} alt="" />
-            <form className={classes.form}>
-             <div className={classes.textfield}>
+            <img className="pic" src={Image} alt="" />
+            <form className="form">
+             <div className="textfield">
               <label htmlFor="E-mail">E-mail</label>
               <input type="text" placeholder="Enter your email number"/>
               <EmailIcon/>
               </div>
-              <div className={classes.textfield}>
+              <div className="textfield">
               <label htmlFor="E-mail">Password</label>
               <input type="password" placeholder="Enter your password"/>
               <LockIcon/>
               </div>
               <button>Login</button>
             </form>
-            <h6>Or sign in with</h6>
-          <div className={classes.footer}>
-            <img src={Logo} alt=""/>
-            <FacebookIcon/>
+            <h5 className="signinwith">Or sign in with</h5>
+          <div className="last">
+             <img src={googleIcon} alt=''/>
+            <FacebookIcon className="svg"/>
           </div>
           </div>
-          <div className={classes.rightsidebar}>
-          <div className={classes.review}>
+            </Col>
+            <Col xl={6} lg={6} md={6}>
+            <div className="rightsidebar">
+          <div className="review">
             <span/>
             <h1>Client <br/> Satisfaction <br/> Review</h1>
-            <div className={classes.message}>
+            <div className="message">
             <img src={Avat} alt=""/>
             <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. </p>
             <h5>Adam Smith</h5>
@@ -55,7 +62,10 @@ const LoginPage = () =>{
           </div>
 
           </div>
-          </div>
+            </Col>
+          </Row>
+         
+          </Container>
     )
 }
 

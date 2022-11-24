@@ -1,6 +1,4 @@
 
-import LoginPage from './components/login';
-
 
 
 

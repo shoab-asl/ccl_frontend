@@ -275,4 +275,12 @@ padding-bottom: 8px;
     padding-bottom: 5px;
       }
   }
+  @media (max-width: 1200px){
+.paymentstatus {
+    width: 100% !important;
+    min-height: 95% !important;
+    background: #fff !important;
+    padding: 10px 10px!important;
+    border-radius: 20px;
+}}
   

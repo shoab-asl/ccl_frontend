@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Button, Navbar,Nav, Card} from 'react-bootstrap';
+import { Button, Navbar,Nav,NavDropdown, Card,Form} from 'react-bootstrap';
 import Logo from '../assets/image.jpeg'; 
 import Person from '../assets/download.jpeg';
 import "../components/dashboard.css";
@@ -18,30 +18,51 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 function AutoLayoutSizingExample() {
   return (
     <div >  
-      <Navbar  className="lol" >
-    <Container  style={{background: "#fff !important"}}>
-    
-      <Navbar.Brand href="#home"><img src={Logo} alt=""/></Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto dashboardmenu">
+
+      <Navbar bg="light" expand="lg" className='lol'>
+      <Container>
+      <Navbar.Brand href="#home" ><img className='logo'src={Logo} alt=""/></Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto dashboardmenu" >
           <Nav.Link href="#dashboard" active><span></span>Dashboard</Nav.Link>
           <Nav.Link href="#contacts">Contacts</Nav.Link>
           <Nav.Link href="services">Services</Nav.Link>
-          <Nav.Link href="invoice" style={{display:"flex"}}>Invoice <KeyboardArrowDownIcon/></Nav.Link>
-          <Nav.Link href="settings"style={{display:"flex"}}>Settings<KeyboardArrowDownIcon/></Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-            <div className='rightnavbar'>
+          {/* <Nav.Link href="invoice" style={{display:"flex"}}>Invoice <KeyboardArrowDownIcon/></Nav.Link>
+          <Nav.Link href="settings"style={{display:"flex"}}>Settings<KeyboardArrowDownIcon/></Nav.Link> */}
+  <NavDropdown title="Invoice" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">
+                Something else here
+              </NavDropdown.Item>
+            </NavDropdown>
+            <NavDropdown title="Settings" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">
+                Something else here
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Form>
+          <div className='rightnavbar dashboardmenu'>
               <input/>
             <SearchIcon className='search'/>
 
             <NotificationAddOutlinedIcon className='notification'/>
             <h6>Michel</h6>
             <img src={Person} alt=""/>
-            </div>
-            </Container>
-  </Navbar>
+            </div></Form>
+          </Navbar.Collapse>
+      </Container>
+    </Navbar>
     
       <Container>
         <Row className='edit' md={12} >
