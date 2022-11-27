@@ -1,24 +1,20 @@
 
- 
 
-
-
-.login .leftsidebar{
-
-    width: 780px;
-    min-height: 770px;
+.login{
+    background-color: #fff;
 }
-
+ 
 
 
  .login .rightsidebar{
 
-    width: 780px;
-    min-height: 770px;
+    width: 103%;
+    min-height: 100%;
     background: #174778;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     padding-left: 83px;
+
 
  
     
@@ -112,7 +108,7 @@ align-self: center;
 .login .leftsidebar .textfield label{
     position: relative;
     top: 12px;
-    left: -351px;
+    left:-222px;
 
     z-index: 99;
     font-family: 'Inter';
@@ -192,7 +188,14 @@ width: 32%;
     margin: 0;
     margin-top: 26px;
     padding: 0;
+    margin-left: 136px;
   
+}
+
+.last svg{
+    margin-right: 30px;
+    height: 23px;
+    width: 23px;
 }
 
 .leftsidebar .last img{
@@ -227,7 +230,7 @@ width: 32%;
 }
 .rightsidebar .review{
     display: flex;
-    margin-top: 50px
+  
 }
 
  .leftsidebar .pic{
@@ -253,35 +256,34 @@ color: #FFFFFF;
     height: 178px;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 20px;
-    top: 455px;
-    left: -154px;
+    top: 443px;
+    left: -166px;
 }
 
 .review img{
- position: relative;
- width: 70px;
- min-height: 70px;
- padding: 19px;
- background-color: #174778;
- border-radius: 50%;
- top: 38px;
- left: -69px;
+    position: relative;
+    width: 70px !important;
+    min-height: 70px !important;
+    padding: 19px !important;
+    background-color: #174778;
+    border-radius: 50%;
+    top: 58px;
+    left: -53px;
 
 }
 
 
 .review p{
     position: relative;
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 24px;
-/* or 171% */
-color: #FFFFFF;
-margin-left: 45px;
-top: -72px;
-left: 20px;
+    font-family: 'Raleway' !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    color: #FFFFFF !important;
+    margin-left: 45px !important;
+    left: 20px;
+    top: -28px;
 }
 
 .review h5{
@@ -292,7 +294,7 @@ font-weight: 500;
 font-size: 14px;
 line-height: 24px;
 color: #FFFFFF;
-top: -78px;
+top: -17px;
 left: 64px;
 margin: 0;
 padding: 0;
@@ -301,19 +303,16 @@ padding: 0;
 
 .review h6{
     position: relative;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 24px;
-    /* identical to box height, or 171% */
-    
-    
-    color: #FFFFFF;
-   top: -78px;
-   left: 64px;
-   margin: 0;
-   padding: 0;
+    font-family: 'Raleway' !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    color: #FFFFFF !important;
+    top: -17px;
+    left: 64px;
+    margin: 0 !important;
+    padding: 0 !important;
    }
    
 
@@ -328,10 +327,163 @@ color: #595959;
 margin-left: 142px;
    }
 
-   
+   @media only screen and (max-width: 1400px){
+    .login .rightsidebar {
+        padding-left: 30px;
+    }
+    .login .leftsidebar .textfield label {
+        left: -189px;
+    }
+   }
 
+   @media only screen and (max-width: 1200px){
+    .login .rightsidebar {
+    
+        padding: 0;
+    }
+    .login .rightsidebar{
+        width: 110%;
+    }
+    .review img {
+        position: relative;
+        top: 58px;
+        left: -49px;
+    }
+    .login .leftsidebar .textfield label {
+       
+        left: -150px;
+  
+    }
+   }
 
+   @media only screen and (max-width: 992px){
+     
+    .signinwith {
+        margin-left: 131px;
+    }
+    .login .leftsidebar .textfield label {
+        left: -70px;
+    }
+    .login .leftsidebar .textfield input {
+        width: 350px;
+        min-height: 48px;
+    }
+    .form button {
+        width: 350px;
+        min-height: 48px;
+    }
+    .last {
+        
+        margin-left: 102px;
+    }
+  
+.last svg {
+    margin-right: 7px;
+    margin-left: 35px;
+}
+.login .leftsidebar h1 {
+    font-size: 30px;
+}
+   }
 
+   @media only screen and (max-width: 768px){
+    .signinwith {
+        margin-left: 116px;
+    }
+    .login .leftsidebar .textfield input {
+        width: 335px;
+    }
+    .form button {
+        width: 335px;
+    }
+    .login .leftsidebar .textfield label {
+        left: -64px;
+    }
+    .leftsidebar .textfield svg {
+    
+        left: 307px;
+    }
+    .login .leftsidebar h1 {
+      
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .last svg {
+        margin-right: 0px;
+        margin-left: 22px;
+    }
+   }
 
-
-
+   @media only screen and (max-width: 575px){
+    .login .leftsidebar .register h5 {
+        font-size: 12px;
+        margin-right: 7px;
+    }
+    .login .leftsidebar .register button {
+        
+        font-size: 12px;}
+        .login .leftsidebar h1 {
+            font-size: 16px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .login .leftsidebar img {
+            width: 150px;
+            height: 70px;
+        }
+            .login .leftsidebar .textfield label {
+                left: -38px;
+            }
+            .last {
+                margin-left: 78px;
+            }
+            .last svg {
+                margin-right: 0px;
+                margin-left: 0;
+              
+            }
+            .login .leftsidebar .textfield input {
+                width: 250px;
+            }
+            .form button {
+                width: 250px;
+            }
+            .signinwith {
+                margin-left: 72px;
+            }
+            .leftsidebar .textfield svg {
+               display: none;
+            }
+            .form button {
+         
+                margin-top: 20px;
+            }
+            .login .leftsidebar p {
+               
+                font-size: 11px;}
+   }
+ 
+   @media only screen and (max-width: 575px){
+    .login .leftsidebar .register h5 {
+        font-size: 10px;
+    }
+    .login .leftsidebar .textfield label {
+        left: -30px;
+    }
+    .signinwith {
+        margin-left: 48px;
+    }
+    .last {
+        margin-left: 59px;
+    }
+    .login .leftsidebar .textfield input {
+        width: 205px;
+    }
+    .form button {
+        width: 205px;
+    }
+    .leftsidebar .pic{
+        margin-left:30px !important;
+    }
+   }

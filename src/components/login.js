@@ -7,7 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import Avat from '../assets/download.jpeg';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { Container,Row, Col } from "react-bootstrap";
-import googleIcon from "../assets/google.png";
+import GoogleIcon from '@mui/icons-material/Google';
 
 
 
@@ -15,10 +15,11 @@ import googleIcon from "../assets/google.png";
 const LoginPage = () =>{
     return(
   
-        <Container>
-          <Row className="login">
-            <Col xl={1} lg={1} md={1} ></Col>
-            <Col xl={5} lg={5} md={5} >
+        <Container >
+          <Row className="login mt-5" >
+            <Col xl={1} lg={1} md={2}  sm={1} xs={1}></Col>
+            <Col xl={5} lg={5} md={4} sm={5} xs={5}style={{marginBottom: "40px"}} >
+            
             <div className="leftsidebar">
             <div className="register">
                 <h5>Have an account?</h5>
@@ -43,16 +44,18 @@ const LoginPage = () =>{
             </form>
             <h5 className="signinwith">Or sign in with</h5>
           <div className="last">
-             <img src={googleIcon} alt=''/>
+           <GoogleIcon/>
             <FacebookIcon className="svg"/>
           </div>
           </div>
+         
             </Col>
-            <Col xl={6} lg={6} md={6}>
+            <Col xl={6} lg={6} md={6} className="	d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" >
             <div className="rightsidebar">
           <div className="review">
             <span/>
             <h1>Client <br/> Satisfaction <br/> Review</h1>
+            
             <div className="message">
             <img src={Avat} alt=""/>
             <p>Lorem ipsum dolor sit amet,<br/> consectetur adipiscing elit. </p>
